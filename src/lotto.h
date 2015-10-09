@@ -7,6 +7,12 @@
 // - Copyright   : priv
 // - Description : Lotto obietowe
 //**************************************************
+class lotto
+{
+public:
+lotto();
 
+private:
+};
 
 #endif /* LOTTO_HPP */

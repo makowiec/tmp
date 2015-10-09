@@ -5,3 +5,9 @@
 // - Copyright   : priv
 // - Description : Lotto obietowe
 //**************************************************
+# include <iostream>
+#include "lotto.h"
+int main()
+{
+	lotto.lotto();
+}
