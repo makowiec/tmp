@@ -7,7 +7,10 @@
 //**************************************************
 #include <iostream>
 #include "lotto.h"
+
 int main()
 {
-	int losowanie();
+	std::cout << lotto() << std::endl;
+
+    return 0;
 }

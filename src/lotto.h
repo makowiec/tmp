@@ -7,13 +7,9 @@
 // - Copyright   : priv
 // - Description : Lotto obietowe pliki
 //**************************************************
-class lotto
-{
-public:
 
-	int losowanie();
+bool czyBylaWylosowana( int iLiczba, int tab[], int ile );
+int wylosuj();
+int lotto();
 
-private:
-};
-
-#endif /* LOTTO_HPP */
+#endif
