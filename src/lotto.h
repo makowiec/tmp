@@ -5,12 +5,13 @@
 // - Author      : makowiec
 // - Version     : 0.1
 // - Copyright   : priv
-// - Description : Lotto obietowe
+// - Description : Lotto obietowe pliki
 //**************************************************
 class lotto
 {
 public:
-lotto();
+
+	int losowanie();
 
 private:
 };

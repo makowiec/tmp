@@ -3,11 +3,11 @@
 // - Author      : makowiec
 // - Version     : 0.1
 // - Copyright   : priv
-// - Description : Lotto obietowe
+// - Description : Lotto obietowe pliki
 //**************************************************
-# include <iostream>
+#include <iostream>
 #include "lotto.h"
 int main()
 {
-	lotto.lotto();
+	int losowanie();
 }

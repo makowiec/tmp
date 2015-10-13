@@ -3,7 +3,7 @@
 // - Author      : makowiec
 // - Version     : 0.1
 // - Copyright   : priv
-// - Description : Lotto obietowe
+// - Description : Lotto obietowe pliki
 //**************************************************
 #include <iostream>
 #include <cstdlib>
@@ -32,7 +32,7 @@ int wylosuj()
     return( rand() % 10 ) + 1;
 }
 
-int lotto()
+int losowanie()
 {
     srand( time( 0 ) );
     int wylosowane[ 5 ];
