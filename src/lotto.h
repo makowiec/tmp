@@ -1,5 +1,5 @@
-#ifndef LOTTO_HPP
-#define LOTTO_HPP
+//#ifndef LOTTO_HPP
+//#define LOTTO_HPP
 //**************************************************
 // - Name        : lotto.h
 // - Author      : makowiec
@@ -7,9 +7,9 @@
 // - Copyright   : priv
 // - Description : Lotto obietowe pliki
 //**************************************************
+#include <iostream>
 
-bool czyBylaWylosowana( int iLiczba, int tab[], int ile );
-int wylosuj();
+extern int wylosowane[ 5 ];
 int lotto();
 
-#endif
+//#endif

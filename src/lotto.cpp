@@ -10,6 +10,9 @@
 #include <ctime>
 #include "lotto.h"
 
+int wylosowane[ 5 ];
+
+
 bool czyBylaWylosowana( int iLiczba, int tab[], int ile )
 {
     if( ile <= 0 )
@@ -35,7 +38,7 @@ int wylosuj()
 int lotto()
 {
     srand( time( 0 ) );
-    int wylosowane[ 5 ];
+ //   int wylosowane[ 5 ];
     int wylosowanych = 0;
     do
     {
@@ -50,10 +53,10 @@ int lotto()
     wylosowanych = 0;
     do
     {
-        //std::cout << wylosowane[ wylosowanych ] << std::endl;
-    	return wylosowane[ wylosowanych ];
+        std::cout << wylosowane[ wylosowanych ] << std::endl;
+    	//return wylosowane[ wylosowanych ];
     	wylosowanych++;
     } while( wylosowanych < 5 );
 
-    //return 0;
+    return 0;
 }
