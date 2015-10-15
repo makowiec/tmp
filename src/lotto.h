@@ -1,5 +1,5 @@
-//#ifndef LOTTO_HPP
-//#define LOTTO_HPP
+#ifndef LOTTO_HPP
+#define LOTTO_HPP
 //**************************************************
 // - Name        : lotto.h
 // - Author      : makowiec
@@ -12,4 +12,4 @@
 extern int wylosowane[ 5 ];
 int lotto();
 
-//#endif
+#endif

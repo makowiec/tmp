@@ -38,7 +38,7 @@ int wylosuj()
 int lotto()
 {
     srand( time( 0 ) );
- //   int wylosowane[ 5 ];
+
     int wylosowanych = 0;
     do
     {
@@ -54,7 +54,6 @@ int lotto()
     do
     {
         std::cout << wylosowane[ wylosowanych ] << std::endl;
-    	//return wylosowane[ wylosowanych ];
     	wylosowanych++;
     } while( wylosowanych < 5 );
 

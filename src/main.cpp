@@ -11,8 +11,8 @@
 
 int main()
 {
-	//std::cout << lotto() << std::endl;
-lotto();
+
+	lotto();
 	std::cout << "teraz pliki" << std::endl;
 	std::cout << wylosowane [ 0 ]  << std::endl;
 	std::cout << wylosowane [ 1 ]  << std::endl;
