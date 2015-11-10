@@ -1466,9 +1466,16 @@
 	"wx_pch.h"
 	"tmpMain.h"
 
-1447159017 source:/home/makowiec/workspace/tmp/simple.cpp
+1447160023 source:/home/makowiec/workspace/tmp/simple.cpp
 	"simple.h"
 
-1447159017 /home/makowiec/workspace/tmp/simple.h
+1447159904 /home/makowiec/workspace/tmp/simple.h
+	<wx/wx.h>
+
+1447160088 source:/home/makowiec/workspace/tmp/main.cpp
+	"main.h"
+	"simple.h"
+
+1447159017 /home/makowiec/workspace/tmp/main.h
 	<wx/wx.h>
 
