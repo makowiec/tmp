@@ -1,13 +1,13 @@
 #include "main.h"
-#include "simple.h"
+#include "start.h"
 
 IMPLEMENT_APP(MyApp)
 
 bool MyApp::OnInit()
 {
-    Simple *simple = new Simple(wxT("Pierwsze okno"));
+    Start *start = new Start(wxT("Pierwsze okno"));
 
-    simple->Show(true);
+    start->Show(true);
 
     return true;
 }
