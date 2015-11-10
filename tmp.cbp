@@ -37,10 +37,10 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
-		<Unit filename="tmpApp.cpp" />
-		<Unit filename="tmpApp.h" />
-		<Unit filename="tmpMain.cpp" />
-		<Unit filename="tmpMain.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="start.cpp" />
+		<Unit filename="start.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
