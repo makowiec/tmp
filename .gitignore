@@ -1,3 +1,4 @@
+# czyszczenie: git rm -r --cached .
 /bin/
 /obj/
 tmp.cbp
