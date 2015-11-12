@@ -7,12 +7,14 @@ Copyright 	: priv
 Description : Okno dla danych z North ;)
 ============================================================================
 */
+/*
+https://forums.wxwidgets.org/viewtopic.php?t=21168
+*/
 
 #include "rwin.h"
 
 Rwin::Rwin(const wxString& title)
     : wxFrame(NULL, -1, title, wxPoint(-1, -1), wxSize(800, 600))
-
 
 {
 
@@ -24,15 +26,15 @@ Rwin::Rwin(const wxString& title)
     Centre();
 
 // tworzenie panelu
-    wxPanel *panel_r = new wxPanel(this, -1);
+   wxPanel *panel_r = new wxPanel(this, -1);
 
 // tworzenie tabeli
 
-    gs_r = new wxGridSizer(12, 5, 3, 3);
+    gs_r = new wxGridSizer(10, 5, 10, 10);
+
     panel_r -> SetSizer (gs_r);
 
 // tworznie przycisku
-//Add(new wxButton(this, -1, wxT("Cls")), 0, wxEXPAND);
 
     wxButton *button_job_r0 = new wxButton(panel_r, -1, wxT("Zadanie 1"));
     wxButton *button_job_r1 = new wxButton(panel_r, -1, wxT("Zadanie 2"));
@@ -45,38 +47,38 @@ Rwin::Rwin(const wxString& title)
     wxButton *button_job_r8 = new wxButton(panel_r, -1, wxT("Zadanie 9"));
     wxButton *button_job_r9 = new wxButton(panel_r, -1, wxT("Zadanie 10"));
 
-    wxButton *button_info_r0 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r1 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r2 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r3 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r4 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r5 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r6 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r7 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r8 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
-    wxButton *button_info_r9 = new wxButton(panel_r, wxID_ANY, wxT("Info"));
+    wxButton *button_info_r0 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r1 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r2 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r3 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r4 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r5 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r6 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r7 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r8 = new wxButton(panel_r, -1, wxT("Info"));
+    wxButton *button_info_r9 = new wxButton(panel_r, -1, wxT("Info"));
 
-    wxButton *button_sys_r0 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r1 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r2 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r3 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r4 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r5 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r6 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r7 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r8 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
-    wxButton *button_sys_r9 = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"));
+    wxButton *button_sys_r0 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r1 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r2 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r3 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r4 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r5 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r6 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r7 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r8 = new wxButton(panel_r, -1, wxT("Szukanie"));
+    wxButton *button_sys_r9 = new wxButton(panel_r, -1, wxT("Szukanie"));
 
-    wxButton *button_pic_r0 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r1 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r2 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r3 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r4 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r5 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r6 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r7 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r8 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
-    wxButton *button_pic_r9 = new wxButton(panel_r, wxID_ANY, wxT("Cel"));
+    wxButton *button_pic_r0 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r1 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r2 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r3 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r4 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r5 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r6 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r7 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r8 = new wxButton(panel_r, -1, wxT("Cel"));
+    wxButton *button_pic_r9 = new wxButton(panel_r, -1, wxT("Cel"));
 
     wxButton *button_res_r0 = new wxButton(panel_r, -1, wxT("Wynik"));
     wxButton *button_res_r1 = new wxButton(panel_r, -1, wxT("Wynik"));
@@ -90,66 +92,128 @@ Rwin::Rwin(const wxString& title)
     wxButton *button_res_r9 = new wxButton(panel_r, -1, wxT("Wynik"));
 
 
-    gs_r -> Add(button_job_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
-    gs_r -> Add(button_info_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
-    gs_r -> Add(button_sys_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
-    gs_r -> Add(button_pic_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
-    gs_r -> Add(button_res_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    //gs_r -> Add (st);
+    gs_r -> Add (button_job_r0, 1, wxEXPAND);
+    gs_r -> Add (button_info_r0, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r0, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r0, 1, wxEXPAND);
+    gs_r -> Add (button_res_r0, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r1, 1, wxEXPAND);
+    gs_r -> Add (button_info_r1, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r1, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r1, 1, wxEXPAND);
+    gs_r -> Add (button_res_r1, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r2, 1, wxEXPAND);
+    gs_r -> Add (button_info_r2, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r2, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r2, 1, wxEXPAND);
+    gs_r -> Add (button_res_r2, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r3, 1, wxEXPAND);
+    gs_r -> Add (button_info_r3, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r3, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r3, 1, wxEXPAND);
+    gs_r -> Add (button_res_r3, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r4, 1, wxEXPAND);
+    gs_r -> Add (button_info_r4, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r4, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r4, 1, wxEXPAND);
+    gs_r -> Add (button_res_r4, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r5, 1, wxEXPAND);
+    gs_r -> Add (button_info_r5, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r5, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r5, 1, wxEXPAND);
+    gs_r -> Add (button_res_r5, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r6, 1, wxEXPAND);
+    gs_r -> Add (button_info_r6, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r6, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r6, 1, wxEXPAND);
+    gs_r -> Add (button_res_r6, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r7, 1, wxEXPAND);
+    gs_r -> Add (button_info_r7, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r7, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r7, 1, wxEXPAND);
+    gs_r -> Add (button_res_r7, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r8, 1, wxEXPAND);
+    gs_r -> Add (button_info_r8, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r8, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r8, 1, wxEXPAND);
+    gs_r -> Add (button_res_r8, 1, wxEXPAND);
 
-    gs_r -> Add(button_job_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_info_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_sys_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_pic_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    gs_r -> Add(button_res_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    gs_r -> Add (button_job_r9, 1, wxEXPAND);
+    gs_r -> Add (button_info_r9, 1, wxEXPAND);
+    gs_r -> Add (button_sys_r9, 1, wxEXPAND);
+    gs_r -> Add (button_pic_r9, 1, wxEXPAND);
+    gs_r -> Add (button_res_r9, 1, wxEXPAND);
+/*
 
+    gs_r -> Add(button_job_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 1);
+    gs_r -> Add(button_info_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 1);
+    gs_r -> Add(button_sys_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 1);
+    gs_r -> Add(button_pic_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 1);
+    gs_r -> Add(button_res_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 1);
+
+    gs_r -> Add(button_job_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r2, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r3, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r4, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r5, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r6, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r7, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r8, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+
+    gs_r -> Add(button_job_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_info_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_sys_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_pic_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+    gs_r -> Add(button_res_r9, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 1);
+*/
     /*gs_r->Add (button_job_r0, 0, wxEXPAND);
     gs_r->Add (button_job_r1, 0, wxEXPAND);
     gs_r->Add (button_job_r2, 0, wxEXPAND);

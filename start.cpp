@@ -23,12 +23,12 @@ Start::Start(const wxString& title)
     Centre();
 
 // tworzenie panelu
-    wxPanel *panel_S = new wxPanel(this, wxID_ANY);
+    wxPanel *panel_s = new wxPanel(this, wxID_ANY);
 
 // tworznie przycisku
-    wxButton *button_start_N = new wxButton(panel_S, wxID_ANY, wxT("North"), wxPoint(30, 30), wxSize(100, 75));
-    wxButton *button_start_S = new wxButton(panel_S, wxID_ANY, wxT("South"), wxPoint(170, 30), wxSize(100, 75));
-    wxButton *button_start_Q = new wxButton(panel_S, wxID_EXIT, wxT("Quit"), wxPoint(100, 135), wxSize(100, 50));
+    wxButton *button_start_N = new wxButton(panel_s, wxID_ANY, wxT("North"), wxPoint(30, 30), wxSize(100, 75));
+    wxButton *button_start_S = new wxButton(panel_s, wxID_ANY, wxT("South"), wxPoint(170, 30), wxSize(100, 75));
+    wxButton *button_start_Q = new wxButton(panel_s, wxID_EXIT, wxT("Quit"), wxPoint(100, 135), wxSize(100, 50));
 
 // akcja - klikniecie
     Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Start::OnQuit));
