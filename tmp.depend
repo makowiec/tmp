@@ -1472,18 +1472,23 @@
 1447159904 /home/makowiec/workspace/tmp/simple.h
 	<wx/wx.h>
 
-1447313090 source:/home/makowiec/workspace/tmp/main.cpp
+1447319242 source:/home/makowiec/workspace/tmp/main.cpp
 	"main.h"
 	"start.h"
 
-1447159017 /home/makowiec/workspace/tmp/main.h
+1447319242 /home/makowiec/workspace/tmp/main.h
 	<wx/wx.h>
 
-1447317927 /home/makowiec/workspace/tmp/start.h
+1447320851 /home/makowiec/workspace/tmp/start.h
 	<wx/wx.h>
 
-1447316800 source:/home/makowiec/workspace/tmp/start.cpp
+1447320937 source:/home/makowiec/workspace/tmp/start.cpp
 	"start.h"
-	<iostream>
-	<wx/event.h>
+	"rwin.h"
+
+1447320565 source:/home/makowiec/workspace/tmp/rwin.cpp
+	"rwin.h"
+
+1447330799 /home/makowiec/workspace/tmp/rwin.h
+	<wx/wx.h>
 

@@ -9,7 +9,7 @@ Description : Glowne okno programu
 */
 
 #include "start.h"
-#include <iostream>
+#include "rwin.h"
 
 Start::Start(const wxString& title)
     : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(300, 215))
@@ -19,13 +19,16 @@ Start::Start(const wxString& title)
     SetMinSize(GetSize());
     SetMaxSize(GetSize());
 
+// wysrodkowania okna
+    Centre();
+
 // tworzenie panelu
-    wxPanel *panel = new wxPanel(this, wxID_ANY);
+    wxPanel *panel_S = new wxPanel(this, wxID_ANY);
 
 // tworznie przycisku
-    wxButton *button_start_N = new wxButton(panel, wxID_ANY, wxT("North"), wxPoint(30, 30), wxSize(100, 75));
-    wxButton *button_start_S = new wxButton(panel, wxID_ANY, wxT("South"), wxPoint(170, 30), wxSize(100, 75));
-    wxButton *button_start_Q = new wxButton(panel, wxID_EXIT, wxT("Quit"), wxPoint(100, 135), wxSize(100, 50));
+    wxButton *button_start_N = new wxButton(panel_S, wxID_ANY, wxT("North"), wxPoint(30, 30), wxSize(100, 75));
+    wxButton *button_start_S = new wxButton(panel_S, wxID_ANY, wxT("South"), wxPoint(170, 30), wxSize(100, 75));
+    wxButton *button_start_Q = new wxButton(panel_S, wxID_EXIT, wxT("Quit"), wxPoint(100, 135), wxSize(100, 50));
 
 // akcja - klikniecie
     Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Start::OnQuit));
@@ -36,8 +39,7 @@ Start::Start(const wxString& title)
     //button_1->SetFocus();
     //button_2->SetFocus();
 
-// wysrodkowania okna
-    Centre();
+
  }
 
 // funkcja zamykajaca okno - przycisk utton_start_Q
@@ -48,6 +50,9 @@ void Start::OnQuit(wxCommandEvent & WXUNUSED(event))
 // funkcja dla przucisku button_start_N
 void Start::OnNorth(wxCommandEvent & WXUNUSED(event))
 {
+
+    Rwin *rwin = new Rwin(wxT("North 2015"));
+    rwin->Show(true);
 
 }
 //funkcja dla przycisku button_start_S
