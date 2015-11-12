@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name 		: main.cpp
+Author 		: makowiec
+Version 	: 0.1
+Copyright 	: priv
+Description : Program do nauki
+============================================================================
+*/
+
 #include "main.h"
 #include "start.h"
 

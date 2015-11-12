@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name 		: start.cpp
+Author 		: makowiec
+Version 	: 0.1
+Copyright 	: priv
+Description : Glowne okno programu
+============================================================================
+*/
+
 #include "start.h"
 #include <iostream>
 
