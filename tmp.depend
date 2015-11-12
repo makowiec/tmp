@@ -1479,10 +1479,11 @@
 1447159017 /home/makowiec/workspace/tmp/main.h
 	<wx/wx.h>
 
-1447161216 /home/makowiec/workspace/tmp/start.h
+1447317927 /home/makowiec/workspace/tmp/start.h
 	<wx/wx.h>
 
-1447313388 source:/home/makowiec/workspace/tmp/start.cpp
+1447316800 source:/home/makowiec/workspace/tmp/start.cpp
 	"start.h"
 	<iostream>
+	<wx/event.h>
 
