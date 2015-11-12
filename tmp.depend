@@ -1472,7 +1472,7 @@
 1447159904 /home/makowiec/workspace/tmp/simple.h
 	<wx/wx.h>
 
-1447160592 source:/home/makowiec/workspace/tmp/main.cpp
+1447313090 source:/home/makowiec/workspace/tmp/main.cpp
 	"main.h"
 	"start.h"
 
@@ -1482,6 +1482,7 @@
 1447161216 /home/makowiec/workspace/tmp/start.h
 	<wx/wx.h>
 
-1447161260 source:/home/makowiec/workspace/tmp/start.cpp
+1447313388 source:/home/makowiec/workspace/tmp/start.cpp
 	"start.h"
+	<iostream>
 

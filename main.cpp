@@ -5,7 +5,7 @@ IMPLEMENT_APP(MyApp)
 
 bool MyApp::OnInit()
 {
-    Start *start = new Start(wxT("Pierwsze okno"));
+    Start *start = new Start(wxT("Learn 2015"));
 
     start->Show(true);
 
