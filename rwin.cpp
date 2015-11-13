@@ -85,12 +85,364 @@ Rwin::Rwin(const wxString& title)
     button_res_r[8] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 452), wxSize(148, 35));
     button_res_r[9] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 498), wxSize(148, 35));
 
+// akcja kliknieci
+    button_job_r[0] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r0));
+    button_job_r[1] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r1));
+    button_job_r[2] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r2));
+    button_job_r[3] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r3));
+    button_job_r[4] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r4));
+    button_job_r[5] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r5));
+    button_job_r[6] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r6));
+    button_job_r[7] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r7));
+    button_job_r[8] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r8));
+    button_job_r[9] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_job_r9));
+
+    button_info_r[0] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r0));
+    button_info_r[1] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r1));
+    button_info_r[2] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r2));
+    button_info_r[3] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r3));
+    button_info_r[4] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r4));
+    button_info_r[5] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r5));
+    button_info_r[6] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r6));
+    button_info_r[7] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r7));
+    button_info_r[8] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r8));
+    button_info_r[9] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_info_r9));
+
+    button_sys_r[0] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r0));
+    button_sys_r[1] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r1));
+    button_sys_r[2] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r2));
+    button_sys_r[3] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r3));
+    button_sys_r[4] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r4));
+    button_sys_r[5] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r5));
+    button_sys_r[6] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r6));
+    button_sys_r[7] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r7));
+    button_sys_r[8] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r8));
+    button_sys_r[9] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_sys_r9));
+
+    button_pic_r[0] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r0));
+    button_pic_r[1] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r1));
+    button_pic_r[2] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r2));
+    button_pic_r[3] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r3));
+    button_pic_r[4] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r4));
+    button_pic_r[5] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r5));
+    button_pic_r[6] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r6));
+    button_pic_r[7] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r7));
+    button_pic_r[8] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r8));
+    button_pic_r[9] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_pic_r9));
+
+    button_res_r[0] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r0));
+    button_res_r[1] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r1));
+    button_res_r[2] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r2));
+    button_res_r[3] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r3));
+    button_res_r[4] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r4));
+    button_res_r[5] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r5));
+    button_res_r[6] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r6));
+    button_res_r[7] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r7));
+    button_res_r[8] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r8));
+    button_res_r[9] -> Connect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::Onbutton_res_r9));
+
 // tworznie przycisku Quit
     wxButton *button_rwin_Q = new wxButton(panel_r, wxID_EXIT, wxT("Quit"), wxPoint(642, 544), wxSize(148, 35));
     Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::OnQuit));
 }
 
+/*
+--------------------------------------------------
+                    Quit
+--------------------------------------------------
+*/
 void Rwin::OnQuit(wxCommandEvent & WXUNUSED(event))
 {
     Close(true);
+}
+
+/*
+--------------------------------------------------
+                    Zadanie 1
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r0(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r0(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r0(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r0(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r0(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 2
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r1(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r1(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r1(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r1(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r1(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 3
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r2(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r2(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r2(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r2(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r2(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 4
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r3(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r3(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r3(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r3(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r3(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 5
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r4(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r4(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r4(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r4(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r4(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 6
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r5(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r5(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r5(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r5(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r5(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 7
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r6(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r6(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r6(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r6(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r6(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 8
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r7(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r7(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r7(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r7(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r7(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 9
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r8(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r8(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r8(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r8(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r8(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+/*
+--------------------------------------------------
+                    Zadanie 10
+--------------------------------------------------
+*/
+void Rwin::Onbutton_job_r9(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_info_r9(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_sys_r9(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_pic_r9(wxCommandEvent & WXUNUSED(event))
+{
+
+}
+
+void Rwin::Onbutton_res_r9(wxCommandEvent & WXUNUSED(event))
+{
+
 }
