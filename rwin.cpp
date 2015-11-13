@@ -152,6 +152,19 @@ Rwin::Rwin(const wxString& title)
     gs_r -> Add (button_sys_r9, 1, wxEXPAND);
     gs_r -> Add (button_pic_r9, 1, wxEXPAND);
     gs_r -> Add (button_res_r9, 1, wxEXPAND);
+
+
+    button_res_r9 -> Disable();
+    button_res_r8 -> Disable();
+    button_res_r7 -> Disable();
+    button_res_r6 -> Disable();
+    button_res_r5 -> Disable();
+    button_res_r4 -> Disable();
+    button_res_r3 -> Disable();
+    button_res_r2 -> Disable();
+    button_res_r1 -> Disable();
+    button_res_r0 -> Disable();
+
 /*
 
     gs_r -> Add(button_job_r0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 1);
