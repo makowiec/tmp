@@ -16,8 +16,7 @@ https://forums.wxwidgets.org/viewtopic.php?t=21168
 #include <cstdio>
 
 Rwin::Rwin(const wxString& title)
-    : wxFrame(NULL, -1, title, wxPoint(-1, -1), wxSize(800, 600))
-
+    : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600))
 {
 
 // blokowanie rozmiaru okna
@@ -28,171 +27,67 @@ Rwin::Rwin(const wxString& title)
     Centre();
 
 // tworzenie panelu
-   wxPanel *panel_r = new wxPanel(this, -1);
+   wxPanel *panel_r = new wxPanel(this, wxID_ANY);
 
-// tworzenie tabeli
+// tworznie przycisków
+    button_job_r[0] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 1"), wxPoint(10, 84), wxSize(148, 35));
+    button_job_r[1] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 2"), wxPoint(10, 130), wxSize(148, 35));
+    button_job_r[2] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 3"), wxPoint(10, 176), wxSize(148, 35));
+    button_job_r[3] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 4"), wxPoint(10, 222), wxSize(148, 35));
+    button_job_r[4] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 5"), wxPoint(10, 268), wxSize(148, 35));
+    button_job_r[5] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 6"), wxPoint(10, 314), wxSize(148, 35));
+    button_job_r[6] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 7"), wxPoint(10, 360), wxSize(148, 35));
+    button_job_r[7] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 8"), wxPoint(10, 406), wxSize(148, 35));
+    button_job_r[8] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 9"), wxPoint(10, 452), wxSize(148, 35));
+    button_job_r[9] = new wxButton(panel_r, wxID_ANY, wxT("Zadanie 10"), wxPoint(10, 498), wxSize(148, 35));
 
-    gs_r = new wxGridSizer(11, 7, 0, 10);
+    button_info_r[0] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 84), wxSize(148, 35));
+    button_info_r[1] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 130), wxSize(148, 35));
+    button_info_r[2] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 176), wxSize(148, 35));
+    button_info_r[3] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 222), wxSize(148, 35));
+    button_info_r[4] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 268), wxSize(148, 35));
+    button_info_r[5] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 314), wxSize(148, 35));
+    button_info_r[6] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 360), wxSize(148, 35));
+    button_info_r[7] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 406), wxSize(148, 35));
+    button_info_r[8] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 452), wxSize(148, 35));
+    button_info_r[9] = new wxButton(panel_r, wxID_ANY, wxT("Info"), wxPoint(168, 498), wxSize(148, 35));
 
-    panel_r -> SetSizer (gs_r);
+    button_sys_r[0] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 84), wxSize(148, 35));
+    button_sys_r[1] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 130), wxSize(148, 35));
+    button_sys_r[2] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 176), wxSize(148, 35));
+    button_sys_r[3] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 222), wxSize(148, 35));
+    button_sys_r[4] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 268), wxSize(148, 35));
+    button_sys_r[5] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 314), wxSize(148, 35));
+    button_sys_r[6] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 360), wxSize(148, 35));
+    button_sys_r[7] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 406), wxSize(148, 35));
+    button_sys_r[8] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 452), wxSize(148, 35));
+    button_sys_r[9] = new wxButton(panel_r, wxID_ANY, wxT("Szukanie"), wxPoint(326, 498), wxSize(148, 35));
 
-// tworznie przycisku
+    button_pic_r[0] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 84), wxSize(148, 35));
+    button_pic_r[1] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 130), wxSize(148, 35));
+    button_pic_r[2] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 176), wxSize(148, 35));
+    button_pic_r[3] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 222), wxSize(148, 35));
+    button_pic_r[4] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 268), wxSize(148, 35));
+    button_pic_r[5] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 314), wxSize(148, 35));
+    button_pic_r[6] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 360), wxSize(148, 35));
+    button_pic_r[7] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 406), wxSize(148, 35));
+    button_pic_r[8] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 452), wxSize(148, 35));
+    button_pic_r[9] = new wxButton(panel_r, wxID_ANY, wxT("Cel"), wxPoint(484, 498), wxSize(148, 35));
 
-    button_job_r[0] = new wxButton(panel_r, -1, wxT("Zadanie 1"));
-    button_job_r[1] = new wxButton(panel_r, -1, wxT("Zadanie 2"));
-    button_job_r[2] = new wxButton(panel_r, -1, wxT("Zadanie 3"));
-    button_job_r[3] = new wxButton(panel_r, -1, wxT("Zadanie 4"));
-    button_job_r[4] = new wxButton(panel_r, -1, wxT("Zadanie 5"));
-    button_job_r[5] = new wxButton(panel_r, -1, wxT("Zadanie 6"));
-    button_job_r[6] = new wxButton(panel_r, -1, wxT("Zadanie 7"));
-    button_job_r[7] = new wxButton(panel_r, -1, wxT("Zadanie 8"));
-    button_job_r[8] = new wxButton(panel_r, -1, wxT("Zadanie 9"));
-    button_job_r[9] = new wxButton(panel_r, -1, wxT("Zadanie 10"));
+    button_res_r[0] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 84), wxSize(148, 35));
+    button_res_r[1] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 130), wxSize(148, 35));
+    button_res_r[2] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 176), wxSize(148, 35));
+    button_res_r[3] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 222), wxSize(148, 35));
+    button_res_r[4] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 268), wxSize(148, 35));
+    button_res_r[5] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 314), wxSize(148, 35));
+    button_res_r[6] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 360), wxSize(148, 35));
+    button_res_r[7] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 406), wxSize(148, 35));
+    button_res_r[8] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 452), wxSize(148, 35));
+    button_res_r[9] = new wxButton(panel_r, wxID_ANY, wxT("Wynik"), wxPoint(642, 498), wxSize(148, 35));
 
-    button_info_r[0] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[1] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[2] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[3] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[4] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[5] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[6] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[7] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[8] = new wxButton(panel_r, -1, wxT("Info"));
-    button_info_r[9] = new wxButton(panel_r, -1, wxT("Info"));
-
-    button_sys_r[0] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[1] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[2] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[3] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[4] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[5] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[6] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[7] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[8] = new wxButton(panel_r, -1, wxT("Szukanie"));
-    button_sys_r[9] = new wxButton(panel_r, -1, wxT("Szukanie"));
-
-    button_pic_r[0] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[1] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[2] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[3] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[4] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[5] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[6] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[7] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[8] = new wxButton(panel_r, -1, wxT("Cel"));
-    button_pic_r[9] = new wxButton(panel_r, -1, wxT("Cel"));
-
-    button_res_r[0] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[1] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[2] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[3] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[4] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[5] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[6] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[7] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[8] = new wxButton(panel_r, -1, wxT("Wynik"));
-    button_res_r[9] = new wxButton(panel_r, -1, wxT("Wynik"));
-
-    wxButton *button_rwin_Q = new wxButton(panel_r, wxID_EXIT, wxT("Quit"));
+// tworznie przycisku Quit
+    wxButton *button_rwin_Q = new wxButton(panel_r, wxID_EXIT, wxT("Quit"), wxPoint(642, 544), wxSize(148, 35));
     Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::OnQuit));
-    //gs_r -> Add (st);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("Rrrr")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[0], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[0], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[0], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[0], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[0], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[1], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[1], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[1], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[1], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[1], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[2], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[2], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[2], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[2], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[2], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[3], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[3], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[3], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[3], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[3], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[4], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[4], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[4], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[4], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[4], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[5], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[5], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[5], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[5], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[5], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[6], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[6], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[6], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[6], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[6], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[7], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[7], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[7], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[7], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[7], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[8], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[8], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[8], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[8], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[8], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add (button_job_r[9], 1, wxEXPAND);
-    gs_r -> Add (button_info_r[9], 1, wxEXPAND);
-    gs_r -> Add (button_sys_r[9], 1, wxEXPAND);
-    gs_r -> Add (button_pic_r[9], 1, wxEXPAND);
-    gs_r -> Add (button_res_r[9], 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-    gs_r -> Add(button_rwin_Q, 1, wxEXPAND);
-    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
-
 }
 
 void Rwin::OnQuit(wxCommandEvent & WXUNUSED(event))
