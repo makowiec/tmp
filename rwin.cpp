@@ -32,7 +32,7 @@ Rwin::Rwin(const wxString& title)
 
 // tworzenie tabeli
 
-    gs_r = new wxGridSizer(11, 5, 10, 10);
+    gs_r = new wxGridSizer(11, 7, 0, 10);
 
     panel_r -> SetSizer (gs_r);
 
@@ -99,75 +99,99 @@ Rwin::Rwin(const wxString& title)
 
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("Rrrr")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[0], 1, wxEXPAND);
     gs_r -> Add (button_info_r[0], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[0], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[0], 1, wxEXPAND);
     gs_r -> Add (button_res_r[0], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[1], 1, wxEXPAND);
     gs_r -> Add (button_info_r[1], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[1], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[1], 1, wxEXPAND);
     gs_r -> Add (button_res_r[1], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[2], 1, wxEXPAND);
     gs_r -> Add (button_info_r[2], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[2], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[2], 1, wxEXPAND);
     gs_r -> Add (button_res_r[2], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[3], 1, wxEXPAND);
     gs_r -> Add (button_info_r[3], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[3], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[3], 1, wxEXPAND);
     gs_r -> Add (button_res_r[3], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[4], 1, wxEXPAND);
     gs_r -> Add (button_info_r[4], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[4], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[4], 1, wxEXPAND);
     gs_r -> Add (button_res_r[4], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[5], 1, wxEXPAND);
     gs_r -> Add (button_info_r[5], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[5], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[5], 1, wxEXPAND);
     gs_r -> Add (button_res_r[5], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[6], 1, wxEXPAND);
     gs_r -> Add (button_info_r[6], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[6], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[6], 1, wxEXPAND);
     gs_r -> Add (button_res_r[6], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[7], 1, wxEXPAND);
     gs_r -> Add (button_info_r[7], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[7], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[7], 1, wxEXPAND);
     gs_r -> Add (button_res_r[7], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[8], 1, wxEXPAND);
     gs_r -> Add (button_info_r[8], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[8], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[8], 1, wxEXPAND);
     gs_r -> Add (button_res_r[8], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add (button_job_r[9], 1, wxEXPAND);
     gs_r -> Add (button_info_r[9], 1, wxEXPAND);
     gs_r -> Add (button_sys_r[9], 1, wxEXPAND);
     gs_r -> Add (button_pic_r[9], 1, wxEXPAND);
     gs_r -> Add (button_res_r[9], 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
     gs_r -> Add(button_rwin_Q, 1, wxEXPAND);
+    gs_r -> Add(new wxStaticText(panel_r, -1, wxT("")), 0, wxEXPAND);
 
 }
 
