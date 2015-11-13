@@ -16,8 +16,18 @@ Description : Okno dla danych z North ;)
 class Rwin : public wxFrame
 {
 public:
+
     Rwin(const wxString& title);
+
+    void OnQuit(wxCommandEvent & event);
+
     wxGridSizer *gs_r;
+    wxButton *button_job_r[10];
+    wxButton *button_info_r[10];
+    wxButton *button_sys_r[10];
+    wxButton *button_pic_r[10];
+    wxButton *button_res_r[10];
+
 };
 
 #endif
