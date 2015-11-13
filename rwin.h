@@ -20,6 +20,7 @@ public:
     Rwin(const wxString& title);
 
     void OnQuit(wxCommandEvent & event);
+    void hide_button_r();
 
     void Onbutton_job_r0(wxCommandEvent & event);
     void Onbutton_job_r1(wxCommandEvent & event);

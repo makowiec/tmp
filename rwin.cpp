@@ -144,8 +144,26 @@ Rwin::Rwin(const wxString& title)
 // tworznie przycisku Quit
     wxButton *button_rwin_Q = new wxButton(panel_r, wxID_EXIT, wxT("Quit"), wxPoint(642, 544), wxSize(148, 35));
     Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(Rwin::OnQuit));
+
 }
 
+
+
+/*
+--------------------------------------------------
+        Hide button: info, sys, pic, res
+--------------------------------------------------
+*/
+void Rwin::hide_button_r()
+{
+	for( int i = 0; i < 10; ++i )
+		{
+		button_info_r[i] -> Hide();
+		button_sys_r[i] -> Hide();
+		button_pic_r[i] -> Hide();
+		button_res_r[i] -> Hide();
+		}
+}
 /*
 --------------------------------------------------
                     Quit
