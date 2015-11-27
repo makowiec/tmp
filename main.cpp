@@ -1,23 +1,9 @@
-/*
-============================================================================
-Name 		: main.cpp
-Author 		: makowiec
-Version 	: 0.1
-Copyright 	: priv
-Description : Program do nauki
-============================================================================
-*/
+#include <iostream>
 
-#include "main.h"
-#include "start.h"
+using namespace std;
 
-IMPLEMENT_APP(MyApp)
-
-bool MyApp::OnInit()
+int main()
 {
-    Start *start = new Start(wxT("Learn 2015"));
-
-    start->Show(true);
-
-    return true;
+    cout << "Hello world!" << endl;
+    return 0;
 }
