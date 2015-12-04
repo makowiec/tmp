@@ -6,28 +6,23 @@ using namespace std;
 
 int main()
 {
-    fstream plik, plik2;
-    plik.open( "C:\\temp\\1.txt", std::ios::in );
-    plik2.open( "C:\\temp\\2.txt", std::ios::out );
+    wifstream plik1;
+    wstring linia;
+    plik1.open ("C:\\temp\\1.txt", ios::in);
 
-    if( plik.good() == true )
-{
-    std::cout << "Uzyskano dostep do pliku!" << std::endl;
-
-    string napis;
-    while( !plik.eof() )
+    if( plik1.good() == true )
         {
-            getline( plik, napis );
-            cout << napis << endl;
+        std::cout << "Uzyskano dostep do pliku!" << std::endl;
+
+        while( !plik1.eof() )
+            {
+            getline( plik1, linia );
+            wcout << linia << endl;
+            }
+        plik1.close();
         }
-
-
-    plik.close();
-
-}
-
-
-    else std::cout << "Dostep do pliku zostal zabroniony!" << std::endl;
+    else
+        std::cout << "Dostep do pliku zostal zabroniony!" << std::endl;
 
     return 0;
 }
