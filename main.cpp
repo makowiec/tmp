@@ -1,6 +1,8 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <locale>
+#include <codecvt>
 
 using namespace std;
 
@@ -17,6 +19,9 @@ int main()
         while( !plik1.eof() )
             {
             getline( plik1, linia );
+
+            std::locale loc (std::locale(), new std::codecvt_utf8<char16_t>);
+
             wcout << linia << endl;
             }
         plik1.close();
